@@ -1,5 +1,7 @@
 import { createClient } from "@/utils/supabase/server";
 import LoginButton from "./components/LoginButton/LoginButton";
+import { redirect } from "next/navigation";
+
 
 
 
@@ -7,6 +9,10 @@ import LoginButton from "./components/LoginButton/LoginButton";
 export default async function Home() {
   const supabase = createClient();
   const { data: posts } = await (await supabase).from("posts").select("*");
+  const { data: { user } } = await (await supabase).auth.getUser()
+  if (!user) {
+    redirect("/login");
+  }
   
 
 

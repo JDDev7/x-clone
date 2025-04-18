@@ -5,6 +5,7 @@ import { Session } from "@supabase/supabase-js";
 import { createClient } from "@/utils/supabase/client";
 import SignOutButton from "../SignOutButton/SignOutButton";
 
+
 function LoginButton() {
   const supabase = createClient();
   const [session, setSession] = useState<Session | null>(null);
@@ -18,6 +19,7 @@ function LoginButton() {
 
     getSession();
   }, []);
+
 
   return session === null ? (
     <button>
