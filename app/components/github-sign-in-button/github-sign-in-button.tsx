@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import style from './GithubSignInButton.module.css'
+import style from './github-sign-in-button.module.css'
 import { signIn } from './actions';
 
 function GitHubSignInButton() {
