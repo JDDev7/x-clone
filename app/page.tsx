@@ -1,7 +1,9 @@
 import { createClient } from "@/utils/supabase/server";
 import LoginButton from "./components/login-button/login-button";
 import { redirect } from "next/navigation";
-import PostCard from "./components/post-card/post-card";
+
+import style from "./page.module.css";
+import PostList from "./components/posts-list/posts-list";
 
 export default async function Home() {
   const supabase = createClient();
@@ -18,27 +20,12 @@ export default async function Home() {
     .select("*, user:users(name, avatar_url, user_name)");
 
   return (
-    <main>
+    <main className={style.mainContainer}>
       <LoginButton />
+      <section className={style.centralSection}>
 
-      {posts?.map((post) => {
-        const { id, user, content } = post;
-
-        const {
-          user_name: userName,
-          name: userFullName,
-          avatar_url: avatarUrl,
-        } = user;
-        return (
-          <PostCard
-            key={id}
-            content={content}
-            userName={userName}
-            userFullName={userFullName}
-            avatarUrl={avatarUrl}
-          />
-        );
-      })}
+        <PostList posts={posts}/>
+      </section>
     </main>
   );
 }

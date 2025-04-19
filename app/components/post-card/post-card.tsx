@@ -1,6 +1,5 @@
 "use client"
 import {Card, CardHeader, CardBody, CardFooter, Avatar} from "@heroui/react";
-import { useState } from "react";
 import style from "./post-card.module.css";
 import Link from "next/link";
 import { IconMessageCircle, IconStar, IconRepeat } from "@tabler/icons-react";
@@ -11,7 +10,7 @@ export default function PostCard({userName, avatarUrl, userFullName, content}: {
     avatarUrl: string,
     content: string
 }) {
-  const [isFollowed, setIsFollowed] = useState(false);
+
 
   return (
     <Card className={style.Card}>
