@@ -1,0 +1,27 @@
+.Card {
+    @apply max-w-[340px];
+}
+
+.CardHeader {
+    @apply justify-between;
+}
+
+.UserInfoContainer {
+    @apply flex gap-2;
+}
+
+.UserInfo {
+    @apply flex flex-col gap-1 items-start justify-center;
+}
+
+.UserFullName {
+    @apply text-small font-semibold leading-none text-default-600;
+}
+
+.UserName {
+    @apply text-small tracking-tight text-default-400;
+}
+
+.Icons {
+    @apply w-4 h-4
+}
