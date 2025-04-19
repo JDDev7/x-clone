@@ -12,6 +12,7 @@
     "@heroui/react": "^2.7.6",
     "@supabase/ssr": "^0.6.1",
     "@supabase/supabase-js": "^2.49.4",
+    "@tabler/icons-react": "^3.31.0",
     "framer-motion": "^12.7.4",
     "next": "^14.2.26",
     "react": "^18",
