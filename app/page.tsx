@@ -1,5 +1,5 @@
 import { createClient } from "@/utils/supabase/server";
-import LoginButton from "./components/LoginButton/LoginButton";
+import LoginButton from "./components/login-button/login-button";
 import { redirect } from "next/navigation";
 
 export default async function Home() {

@@ -1,4 +1,4 @@
-import GitHubSignInButton from '../components/GithubSignInButton/GithubSignInButton'
+import GitHubSignInButton from '../components/github-sign-in-button/github-sign-in-button'
 
 import { login, signup } from './actions'
 

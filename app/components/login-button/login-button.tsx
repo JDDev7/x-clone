@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Session } from "@supabase/supabase-js";
 import { createClient } from "@/utils/supabase/client";
-import SignOutButton from "../SignOutButton/SignOutButton";
+import SignOutButton from "../sign-out-button/sign-out-button";
 
 
 function LoginButton() {
