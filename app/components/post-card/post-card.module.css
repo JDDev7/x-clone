@@ -1,5 +1,5 @@
 .Card {
-    @apply max-w-[340px];
+    @apply max-w-[600px] min-w-[420px] bg-transparent;
 }
 
 .CardHeader {
