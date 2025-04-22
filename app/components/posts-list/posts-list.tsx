@@ -1,7 +1,8 @@
 import React from 'react'
 import PostCard from '../post-card/post-card';
-//TODO: fix the types
-function PostList({posts}) {
+import { type Post } from '@/app/types/posts';
+
+function PostList({posts} : {posts: Post[] | null}) {
   return (
     <>
     
