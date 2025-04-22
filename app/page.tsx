@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 
 import style from "./page.module.css";
 import PostList from "./components/posts-list/posts-list";
+import CreatePost from "./components/create-post/create-post";
 
 
 export default async function Home() {
@@ -12,6 +13,7 @@ export default async function Home() {
   const {
     data: { user },
   } = await (await supabase).auth.getUser();
+
   if (!user) {
     redirect("/login");
   }
@@ -24,7 +26,7 @@ export default async function Home() {
     <main className={style.mainContainer}>
       <LoginButton />
       <section className={style.centralSection}>
-
+        <CreatePost userAvatarUrl={user.user_metadata?.avatar_url}/>
         <PostList posts={posts}/>
       </section>
     </main>

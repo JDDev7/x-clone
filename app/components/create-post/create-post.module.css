@@ -1,0 +1,11 @@
+.FormContainer {
+    @apply flex flex-1 flex-col gap-y-4
+}
+
+.MessageArea {
+    @apply w-full text-2xl bg-black placeholder-gray-500
+}
+
+.PostButton {
+    @apply bg-sky-500 font-bold text-white rounded-full px-5 py-2 self-end
+}
