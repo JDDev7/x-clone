@@ -5,6 +5,7 @@ import { redirect } from "next/navigation";
 import style from "./page.module.css";
 import PostList from "./components/posts-list/posts-list";
 
+
 export default async function Home() {
   const supabase = createClient();
 
