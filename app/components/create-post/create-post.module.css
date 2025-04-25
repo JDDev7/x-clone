@@ -1,11 +1,19 @@
 .FormContainer {
-    @apply flex flex-1 flex-col gap-y-4
+    @apply flex flex-row p-4 border-b border-white/30
 }
 
 .MessageArea {
-    @apply w-full text-2xl bg-black placeholder-gray-500
+    @apply w-full text-2xl bg-black placeholder-gray-500 p-2
 }
 
 .PostButton {
     @apply bg-sky-500 font-bold text-white rounded-full px-5 py-2 self-end
+}
+
+.AvatarImg {
+    @apply rounded-full w-10 h-10 object-contain mr-2
+}
+
+.InsertPostContainer {
+    @apply flex flex-1 flex-col gap-y-4
 }
