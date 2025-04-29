@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Session } from "@supabase/supabase-js";
 import { createClient } from "@/utils/supabase/client";
 import SignOutButton from "../sign-out-button/sign-out-button";
-
+import style from "./login-button.module.css";
 
 function LoginButton() {
   const supabase = createClient();
@@ -22,7 +22,7 @@ function LoginButton() {
 
 
   return session === null ? (
-    <button>
+    <button className={style.loginButton}>
       <Link href="/login">Log in</Link>
     </button>
   ) : (

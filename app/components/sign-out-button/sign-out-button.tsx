@@ -1,6 +1,6 @@
 "use client"
 import { createClient } from '@/utils/supabase/client'
-
+import style from './sign-out-button.module.css'
 
 
 import React from 'react'
@@ -20,7 +20,7 @@ function SignOutButton() {
 
   return (
 
-    <button onClick={signOut}>Sign Out</button>
+    <button onClick={signOut} className={style.signOutButton}>Sign Out</button>
 
   )
 }
