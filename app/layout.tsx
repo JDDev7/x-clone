@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
+import Navbar from "./navbar/navbar";
 
 export const metadata: Metadata = {
   title: "Clon de twitter",
@@ -14,7 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body>
+      <body className="w-full h-dvh flex">
+          <Navbar />
         <Providers>
         {children}
         </Providers>
