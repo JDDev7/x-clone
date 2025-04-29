@@ -25,7 +25,6 @@ export default async function Home() {
 
   return (
     <main className={style.mainContainer}>
-      <LoginButton />
       <section className={style.centralSection}>
         <CreatePost userAvatarUrl={user.user_metadata?.avatar_url}/>
         <PostList posts={posts}/>
