@@ -1,6 +1,6 @@
 import React from "react";
-import CreatePost from "../components/create-post/create-post";
-import PostList from "../components/posts-list/posts-list";
+
+import PostList from "@/app/components/posts-list/posts-list";
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
 import style from "./notifications.module.css";
@@ -26,7 +26,7 @@ async function NotificationsPage() {
     
 
   return (
-    <section className={style.centralSection}>
+    <section>
       <div className="border-b border-white/20"><h1 className="text-2xl font-bold text-center py-4">Notifications</h1></div>
       <PostList posts={posts} />
     </section>

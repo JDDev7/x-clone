@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import style from './navbar.module.css'
 import { IconBell, IconHome, IconMessage, IconSearch, IconSettings, IconUserCircle, IconFeatherFilled } from '@tabler/icons-react'
-import LoginButton from '../components/login-button/login-button'
+import LoginButton from '../login-button/login-button'
 
 
 function Navbar() {

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import { Providers } from "./providers";
-import Navbar from "./components/navbar/navbar";
+
+
+import Navbar from "@/app/components/navbar/navbar";
 
 export const metadata: Metadata = {
   title: "Clon de twitter",
@@ -14,12 +14,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body>
-        <Providers>
+    <section className="w-full h-dvh flex">
+        <Navbar />
         {children}
-        </Providers>
-      </body>
-    </html>
+    </section>
   );
 }

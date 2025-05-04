@@ -1,7 +1,0 @@
-.mainContainer {
-    @apply flex min-h-screen flex-col items-center
-}
-
-.centralSection {
-    @apply max-w-[600px] w-full mx-auto border-l border-r border-white/30 h-full;
-}

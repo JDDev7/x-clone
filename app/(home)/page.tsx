@@ -1,10 +1,10 @@
 import { createClient } from "@/utils/supabase/server";
-import LoginButton from "./components/login-button/login-button";
+import LoginButton from "../components/login-button/login-button";
 import { redirect } from "next/navigation";
 
-import style from "./page.module.css";
-import PostList from "./components/posts-list/posts-list";
-import CreatePost from "./components/create-post/create-post";
+import style from "./page.module.css"
+import PostList from "../components/posts-list/posts-list";
+import CreatePost from "../components/create-post/create-post";
 
 
 export default async function Home() {
